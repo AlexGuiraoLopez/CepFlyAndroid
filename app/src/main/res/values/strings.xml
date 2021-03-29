@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">CepFly2</string>
+    <string name="app_name">CepFly</string>
+    <string name="welcome">Welcome to CepFly</string>
+    <string name="start_mode">Start!</string>
+    <string name="menu_principal">Main Menu</string>
+    <string name="admin_mode">Admin mode</string>
+    <string name="user_mode">User mode</string>
+    <string name="exit_mode">Exit</string>
 </resources>

@@ -8,32 +8,44 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="384dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="48dp"
-        android:background="#38CD3E"
-        android:fontFamily="sans-serif-black"
-        android:text="Bienvenid@ CepFly"
-        android:textAllCaps="false"
-        android:textColor="#543093"
-        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/menu_principal"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="printToast"
-        android:text="Start!"
-        android:textSize="36sp"
-        app:backgroundTint="#0C9A8D"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/admin_mode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:onClick="changeToStart"
+        android:text="@string/exit_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/user_mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
