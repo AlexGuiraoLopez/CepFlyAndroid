@@ -6,4 +6,10 @@
     <string name="admin_mode">Admin mode</string>
     <string name="user_mode">User mode</string>
     <string name="exit_mode">Exit</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="flight_info">Flight info</string>
+    <string name="new_employee">New employee</string>
+    <string name="employee_info">Employee info</string>
 </resources>
