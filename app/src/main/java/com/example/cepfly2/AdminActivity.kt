@@ -20,4 +20,9 @@ class AdminActivity  : AppCompatActivity()
         val intent = Intent(this,FlightShowActivity::class.java).apply { }
         startActivity(intent)
     }
+    fun changeToStart(view:View)
+    {
+        val intent = Intent(this, StartActivity::class.java).apply {  }
+        startActivity(intent)
+    }
 }

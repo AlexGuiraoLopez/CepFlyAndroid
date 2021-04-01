@@ -35,6 +35,7 @@
         android:layout_width="41dp"
         android:layout_height="37dp"
         android:layout_marginTop="64dp"
+        android:onClick="increaseTickets"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.241"
@@ -48,6 +49,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="64dp"
+        android:onClick="decreaseTickets"
         android:text="-"
         app:layout_constraintStart_toEndOf="@+id/tv_amount"
         app:layout_constraintTop_toBottomOf="@+id/tv_ticketSell" />
@@ -79,6 +81,7 @@
         android:id="@+id/btn_buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="buyTickets"
         android:text="Comprar"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,4 +89,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_totalPrice"
         app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/btn_debugger"
+        android:layout_width="155dp"
+        android:layout_height="115dp"
+        android:onClick="debug"
+        android:text="Debug"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="440dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

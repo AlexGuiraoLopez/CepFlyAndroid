@@ -19,6 +19,12 @@ class MainActivity : AppCompatActivity()
         startActivity(intent)
     }
 
+    fun changeToClient(view:View)
+    {
+        val intent = Intent(this, ClientActivity::class.java).apply {  }
+        startActivity(intent)
+    }
+
     fun changeToStart(view:View)
     {
         val intent = Intent(this, StartActivity::class.java).apply {  }
