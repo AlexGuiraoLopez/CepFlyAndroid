@@ -15,9 +15,9 @@ class StartActivity : AppCompatActivity()
         setContentView(R.layout.activity_start_screen)
     }
 
-    public fun changeToMainMenu(view: View)
+    fun changeToFlightSet(view: View)
     {
-        val intent = Intent(this, MainActivity::class.java).apply {  }
+        val intent = Intent(this, FlightSetActivity::class.java).apply {  }
         startActivity(intent)
     }
 }

@@ -33,6 +33,26 @@ public class Flight implements FlightManager
         employeeList[2]= new Employee[MAX_EMPLOYEE];
     }
 
+    public Flight(String origin,
+                  String Destiny,
+                  String planeName,
+                  int duration,
+                  int seatTotalAmount,
+                  float seatPrice)
+    {
+        this.origin=origin;
+        this.destiny=destiny;
+        this.planeName=planeName;
+        this.duration=duration;
+        this.seatTotalAmount=seatTotalAmount;
+        this.seatPrice=seatPrice;
+
+        /*Define la longitud para cada fila dependiendo del número máximo de cada tipo de trabajador*/
+        employeeList[0]= new Employee[MAX_PILOT];
+        employeeList[1]= new Employee[MAX_COPILOT];
+        employeeList[2]= new Employee[MAX_EMPLOYEE];
+    }
+
     public void createFlight()
     {
         String origin, destiny, planeName;
