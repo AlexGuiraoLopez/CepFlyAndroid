@@ -30,13 +30,13 @@ class FlightSetActivity : AppCompatActivity()
 
     private fun setFlightInfo()
     {
-        var flight : Flight
-        etOrigin.text.toString()
-        etDestiny.text.toString()
-        etPlaneName.text.toString()
-        etDuration.text.toString()
-        etSeatAmount.text.toString()
-        etSeatPrice.text.toString()
+        Flight.origin=etOrigin.text.toString()
+        Flight.destiny=etDestiny.text.toString()
+        Flight.planeName=etPlaneName.text.toString()
+        Flight.duration=Integer.parseInt(etDuration.text.toString())
+        Flight.seatTotalAmount=Integer.parseInt(etSeatAmount.text.toString())
+        Flight.seatPrice=(etSeatPrice.text.toString()).toFloat()
+
     }
 
     fun changeToMainMenu(view: View)

@@ -20,6 +20,7 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".AdminActivity"/>
         <activity android:name=".FlightSetActivity"/>
+        <activity android:name=".FlightShowActivity"/>
     </application>
 
 </manifest>

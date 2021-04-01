@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,26 +31,27 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_adminMode" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_exit2"
         android:layout_width="191dp"
         android:layout_height="77dp"
-        android:layout_marginTop="556dp"
+        android:onClick="changeToStart"
         android:text="@string/exit_mode"
         android:textSize="24sp"
         app:backgroundTint="#9C27B0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_adminMode"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_flightInfo"
+        app:layout_constraintVertical_bias="0.349" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_flightInfo"
         android:layout_width="186dp"
         android:layout_height="69dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="148dp"
+        android:onClick="changeToFlightInfo"
         android:text="@string/flight_info"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,11 +61,11 @@
         android:id="@+id/button6"
         android:layout_width="185dp"
         android:layout_height="68dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="148dp"
         android:text="@string/employee_info"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.785"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toEndOf="@+id/btn_flightInfo"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
