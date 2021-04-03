@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#7246EB">
 
     <TextView
         android:id="@+id/textView"
@@ -12,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/menu_principal"
-        android:textSize="30sp"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +27,9 @@
         android:layout_marginTop="48dp"
         android:onClick="changeToLogin"
         android:text="@string/admin_mode"
+        android:textColor="#245325"
+        android:textSize="24sp"
+        app:backgroundTint="#4CAF50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -35,6 +40,7 @@
         android:layout_height="48dp"
         android:onClick="changeToStart"
         android:text="@string/exit_mode"
+        app:backgroundTint="#A83131"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +54,22 @@
         android:layout_marginTop="24dp"
         android:onClick="changeToClient"
         android:text="@string/user_mode"
+        android:textColor="#5E5826"
+        android:textSize="24sp"
+        app:backgroundTint="#FFC107"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_adminMode" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="232dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_exit"
+        app:layout_constraintVertical_bias="0.38"
+        app:srcCompat="@drawable/ic_flight_land_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

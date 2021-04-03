@@ -19,14 +19,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.377" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.153" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="410dp"
         android:layout_height="56dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:background="#FFF266"
         android:fontFamily="sans-serif-black"
         android:gravity="center_horizontal|fill_vertical"
@@ -35,8 +35,19 @@
         android:textColor="#9E9420"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="153dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="48dp"
+        android:tint="#D3000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/ic_flight_land_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

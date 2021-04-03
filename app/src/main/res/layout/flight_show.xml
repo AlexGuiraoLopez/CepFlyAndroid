@@ -11,11 +11,12 @@
         android:layout_width="353dp"
         android:layout_height="52dp"
         android:layout_marginTop="16dp"
-        android:background="#FFF266"
+        android:background="#00FFF266"
         android:gravity="center"
-        android:text="Información del vuelo"
-        android:textColor="#9E9420"
+        android:text="@string/info_vuelo"
+        android:textColor="#000000"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,77 +25,77 @@
         android:id="@+id/tv_origin"
         android:layout_width="269dp"
         android:layout_height="34dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFF266"
         android:text="Origin"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_flightShow"
-        android:background="#FFF266"
-        android:textColorHint="#9E9420"/>
+        app:layout_constraintTop_toBottomOf="@+id/txt_flightShow" />
 
     <TextView
         android:id="@+id/tv_destiny"
         android:layout_width="269dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFF266"
         android:text="Destiny"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_origin"
-        android:background="#FFF266"
-        android:textColorHint="#9E9420"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_origin" />
 
     <TextView
         android:id="@+id/tv_planeName"
         android:layout_width="269dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFF266"
         android:text="Plane Name"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_destiny"
-        android:background="#FFF266"
-        android:textColorHint="#9E9420"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_destiny" />
 
     <TextView
         android:id="@+id/tv_duration"
         android:layout_width="269dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFF266"
         android:text="Duration"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_planeName"
-        android:background="#FFF266"
-        android:textColorHint="#9E9420"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_planeName" />
 
     <TextView
         android:id="@+id/tv_seatAmount"
         android:layout_width="269dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFF266"
         android:text="Seat Amount"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_duration"
-        android:background="#FFF266"
-        android:textColorHint="#9E9420"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_duration" />
 
     <TextView
         android:id="@+id/tv_seatPrice"
         android:layout_width="269dp"
         android:layout_height="34dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFF266"
         android:text="Seat price"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_seatAmount"
-        android:background="#FFF266"
-        android:textColorHint="#9E9420"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_seatAmount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
