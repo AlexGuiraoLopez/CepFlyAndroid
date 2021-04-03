@@ -3,17 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#7246EB"><![CDATA[
+
+    />
+
+    ]]>
 
     <TextView
         android:id="@+id/txt_flightSet"
         android:layout_width="248dp"
         android:layout_height="51dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFF266"
+        android:gravity="center"
         android:text="Define el vuelo"
+        android:textColorHint="#9E9420"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,24 +30,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#FFF266"
         android:ems="10"
         android:hint="Origin"
         android:inputType="textPersonName"
+        android:textColorHint="#9E9420"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_flightSet" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_flightSet" /><![CDATA[/>
+
+    ]]>
 
     <EditText
         android:id="@+id/et_destiny"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="219dp"
+        android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:background="#FFF266"
         android:ems="10"
         android:hint="Destiny"
         android:inputType="textPersonName"
+        android:textColorHint="#9E9420"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_origin" />
 
@@ -48,9 +64,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="#FFF266"
         android:ems="10"
         android:hint="Duration"
         android:inputType="textPersonName"
+        android:textColorHint="#9E9420"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,9 +80,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="#FFF266"
         android:ems="10"
         android:hint="Number of seats"
         android:inputType="textPersonName"
+        android:textColorHint="#9E9420"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.149"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,38 +96,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="#FFF266"
         android:ems="10"
         android:hint="Seat price"
         android:inputType="textPersonName"
+        android:textColorHint="#9E9420"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_seats" />
+        app:layout_constraintTop_toBottomOf="@+id/et_seats"
+        app:layout_constraintVertical_bias="0.005" />
 
     <EditText
         android:id="@+id/et_planeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
         android:layout_marginTop="16dp"
+        android:background="#FFF266"
         android:ems="10"
         android:hint="Plane name"
         android:inputType="textPersonName"
+        android:textColorHint="#9E9420"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_destiny" />
 
     <Button
         android:id="@+id/btn_go"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFF266"
         android:onClick="changeToMainMenu"
         android:text="Go!"
+        android:textColor="#2E2B0D"
+        android:textColorHint="#9E9420"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.773"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_seatPrice"
-        app:layout_constraintVertical_bias="0.155" />
+        app:backgroundTint="#9E9420"
+        app:layout_constraintStart_toEndOf="@+id/et_destiny"
+        app:layout_constraintTop_toBottomOf="@+id/et_origin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
