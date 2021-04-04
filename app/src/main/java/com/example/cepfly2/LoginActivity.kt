@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
-        etUsername= findViewById(R.id.et_username) as EditText
+        etUsername= findViewById(R.id.et_userName) as EditText
         etPassword= findViewById(R.id.et_password) as EditText
         tvErrorText=findViewById(R.id.tv_errorText) as TextView
         tvErrorText.visibility=View.INVISIBLE

@@ -13,6 +13,7 @@
     <string name="new_employee">New employee</string>
     <string name="employee_info">Employee info</string>
     <string name="venta_tickets"><u>Venta de tickets</u></string>
-    <string name="info_vuelo"><u>Información del vuelo</u></string>
-    <string name="define_vuelo"><u>Define el vuelo</u></string>
+    <string name="info"><u>Info</u></string>
+    <string name="set_flight"><u>Set flight</u></string>
+    <string name="add_employee"><u>Add Employee</u></string>
 </resources>

@@ -41,7 +41,7 @@
         android:textSize="18sp"
         app:backgroundTint="#31C337"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toEndOf="@+id/tv_ticketsToBuy"
         app:layout_constraintTop_toBottomOf="@+id/tv_ticketSell" />
 
@@ -75,7 +75,7 @@
         android:id="@+id/tv_totalPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="84dp"
         android:text="Precio"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,21 +95,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_totalPrice"
-        app:layout_constraintVertical_bias="0.19" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Atrás"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:backgroundTint="#BD2222"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_buy"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.215" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

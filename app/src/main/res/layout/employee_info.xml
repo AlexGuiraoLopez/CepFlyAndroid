@@ -5,33 +5,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7246EB">
+    android:background="@color/black">
 
     <TextView
-        android:id="@+id/tv_clientMenu"
+        android:id="@+id/tv_infoEmployee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
         android:layout_marginTop="16dp"
-        android:text="Client"
+        android:text="@string/info"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_buyMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="changeToBuy"
-        android:text="Buy tickets"
-        android:textSize="36sp"
-        app:backgroundTint="#03A9F4"
+    <TextView
+        android:id="@+id/tv_employeeDescription"
+        android:layout_width="349dp"
+        android:layout_height="612dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_clientMenu"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_infoEmployee"
+        app:layout_constraintVertical_bias="0.49" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

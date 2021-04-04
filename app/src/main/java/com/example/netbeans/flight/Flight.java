@@ -53,6 +53,13 @@ public class Flight implements FlightManager
         employeeList[2]= new Employee[MAX_EMPLOYEE];
     }
 
+    public static void createEmployeeList()
+    {
+        employeeList[0]= new Employee[MAX_PILOT];
+        employeeList[1]= new Employee[MAX_COPILOT];
+        employeeList[2]= new Employee[MAX_EMPLOYEE];
+    }
+
     public void createFlight()
     {
         String origin, destiny, planeName;

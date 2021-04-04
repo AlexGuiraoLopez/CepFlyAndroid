@@ -24,12 +24,14 @@
         android:id="@+id/button4"
         android:layout_width="191dp"
         android:layout_height="77dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="68dp"
+        android:onClick="changeToNewEmployee"
         android:text="@string/new_employee"
         android:textColor="#154017"
         android:textSize="24sp"
         app:backgroundTint="#8BC34A"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_adminMode" />
 
@@ -37,39 +39,27 @@
         android:id="@+id/btn_exit2"
         android:layout_width="191dp"
         android:layout_height="77dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="40dp"
         android:onClick="changeToStart"
         android:text="@string/exit_mode"
         android:textColor="#601C1C"
         android:textSize="24sp"
         app:backgroundTint="#D82D3B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_flightInfo"
-        app:layout_constraintVertical_bias="0.229" />
-
-    <Button
-        android:id="@+id/btn_flightInfo"
-        android:layout_width="186dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="56dp"
-        android:onClick="changeToFlightInfo"
-        android:text="@string/flight_info"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="185dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="191dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="32dp"
+        android:onClick="changeToEmployeeInfo"
         android:text="@string/employee_info"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toEndOf="@+id/btn_flightInfo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

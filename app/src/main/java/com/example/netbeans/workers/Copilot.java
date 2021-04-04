@@ -28,7 +28,16 @@ public class Copilot extends Employee
             System.out.println(ConsoleColors.RED+"El numero de copilotos ya es el máximo");
         }
     }
-    
+
+    @Override
+    public String toString() {
+        return "Copilot{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", dni='" + dni + '\'' +
+                '}';
+    }
+
     @Override
     public void showInfo()
     {

@@ -26,6 +26,7 @@ class FlightSetActivity : AppCompatActivity()
         etDuration = findViewById(R.id.et_duration)
         etSeatAmount = findViewById(R.id.et_seats)
         etSeatPrice = findViewById(R.id.et_seatPrice)
+        Flight.createEmployeeList()
     }
 
     private fun setFlightInfo()

@@ -29,7 +29,7 @@
         android:layout_marginTop="16dp"
         android:background="#FFF266"
         android:fontFamily="sans-serif-black"
-        android:gravity="center_horizontal|fill_vertical"
+        android:gravity="center|fill_vertical"
         android:text="@string/welcome"
         android:textAllCaps="false"
         android:textColor="#9E9420"

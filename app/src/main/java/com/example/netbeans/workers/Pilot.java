@@ -30,7 +30,19 @@ public class Pilot extends Employee
             System.out.println(ConsoleColors.RED+"El numero de pilotos ya es el máximo");
         }
     }
-    
+
+    @Override
+    public String toString()
+    {
+        return "Pilot{" +
+                "Reference='" + reference + '\'' +
+                ", Telephone='" + telephone + '\'' +
+                ", Name='" + name + '\'' +
+                ", Surname='" + surname + '\'' +
+                ", Dni='" + dni + '\'' +
+                '}';
+    }
+
     @Override
     public void showInfo()
     {

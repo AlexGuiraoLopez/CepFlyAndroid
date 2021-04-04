@@ -21,8 +21,13 @@
         <activity android:name=".AdminActivity"/>
         <activity android:name=".ClientActivity"/>
         <activity android:name=".FlightSetActivity"/>
-        <activity android:name=".FlightShowActivity"/>
-        <activity android:name=".BuyTicketsActivity"/>
+        <activity android:name=".FlightShowActivity"
+            android:parentActivityName=".ClientActivity"/>
+        <activity android:name=".BuyTicketsActivity"
+            android:parentActivityName=".ClientActivity"/>
+        <activity android:name=".NewEmployeeActivity"
+            android:parentActivityName=".AdminActivity"/>
+        <activity android:name=".EmployeeInfoActivity"/>
     </application>
 
 </manifest>

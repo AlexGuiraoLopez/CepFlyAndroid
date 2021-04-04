@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:background="#00FFFFFF"
         android:gravity="center"
-        android:text="@string/define_vuelo"
+        android:text="@string/set_flight"
         android:textColorHint="#9E9420"
         android:textSize="30sp"
         android:textStyle="bold"

@@ -15,9 +15,14 @@ class AdminActivity  : AppCompatActivity()
 
     }
 
-    fun changeToFlightInfo(view: View)
+    fun changeToNewEmployee(view: View)
     {
-        val intent = Intent(this,FlightShowActivity::class.java).apply { }
+        val intent = Intent(this,NewEmployeeActivity::class.java).apply { }
+        startActivity(intent)
+    }
+    fun changeToEmployeeInfo(view: View)
+    {
+        val intent = Intent(this,EmployeeInfoActivity::class.java).apply { }
         startActivity(intent)
     }
     fun changeToStart(view:View)
