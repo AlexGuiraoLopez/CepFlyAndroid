@@ -6,10 +6,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.netbeans.flight.Flight
-import com.example.netbeans.visualfront.ConsoleColors
 import com.example.netbeans.workers.Copilot
-import com.example.netbeans.workers.Employee
 import com.example.netbeans.workers.Pilot
+import java.util.ArrayList
 
 class NewEmployeeActivity : AppCompatActivity()
 {
@@ -21,32 +20,26 @@ class NewEmployeeActivity : AppCompatActivity()
 
     private fun changeToAdmin()
     {
-        val intent = Intent(this,AdminActivity::class.java).apply {  }
+        val intent = Intent(this, AdminActivity::class.java).apply {  }
         startActivity(intent)
     }
 
     /**
      * Da de alta un piloto.
      */
-    fun assignPilot(view:View)
+    fun assignPilot(view: View)
     {
-        //Flight.employeeList[0][0] = Pilot.pilotList[0]
-        Toast.makeText(this,"Añadido",Toast.LENGTH_LONG)
-        changeToAdmin()
-
-        /*FALTA CONTROLAR ESTA COMPROBACION DE NULL EN KOTLIN
-        if (Flight.employeeList[0][Flight.MAX_PILOT - 1] == null)
+        if (Pilot.pilotCounter<Flight.MAX_PILOT)
         {
-            Flight.employeeList[0][0] = Pilot.pilotList[0]
-            Toast.makeText(this,"Añadido",Toast.LENGTH_LONG)
-            changeToLogin()
+            Flight.employeeList[0].add(Pilot("Harrison", "Ford", "45854112-V", "HLK-011", "+34569954521", "05/10/1974"))
+            Pilot.pilotCounter++
+            Toast.makeText(this, "Añadido", Toast.LENGTH_LONG).show()
+            changeToAdmin()
         }
         else
         {
-            Toast.makeText(this,"Pilotos al máximo",Toast.LENGTH_LONG)
+            Toast.makeText(this, "Pilotos al máximo", Toast.LENGTH_SHORT).show()
         }
-        */
-
     }
 
     /**
@@ -54,22 +47,24 @@ class NewEmployeeActivity : AppCompatActivity()
      */
     fun assignCopilot(view: View)
     {
-        if (Flight.employeeList[1][Flight.MAX_COPILOT - 1] == null)
+        if (Copilot.copilotCounter<Flight.MAX_COPILOT)
         {
-            Flight.employeeList[1][0] = Copilot.copilotList[0]
-            Toast.makeText(this,"Añadido",Toast.LENGTH_LONG)
+            Flight.employeeList[1].add(Copilot("Cheewakka", "Cheewee", "41254741-L", true))
+            Toast.makeText(this, "Añadido", Toast.LENGTH_LONG).show()
+            Copilot.copilotCounter++
             changeToAdmin()
         }
         else
         {
-            Toast.makeText(this,"Copilotos al máximo",Toast.LENGTH_LONG)
+            Toast.makeText(this, "Copilotos al máximo", Toast.LENGTH_SHORT).show()
         }
     }
 
     /**
      * Da de alta un asistente.
      */
-    fun assignEmployee(view:View)
+    /*
+    fun assignEmployee(view: View)
     {
         var asigned = false
         var listIndex = 0
@@ -80,7 +75,7 @@ class NewEmployeeActivity : AppCompatActivity()
                 {
                     Flight.employeeList[2][listIndex] = Employee.assistantList[listIndex]
                     asigned = true
-                    Toast.makeText(this,"Añadido",Toast.LENGTH_LONG)
+                    Toast.makeText(this, "Añadido", Toast.LENGTH_LONG)
                     changeToAdmin()
                 }
                 listIndex++
@@ -88,9 +83,10 @@ class NewEmployeeActivity : AppCompatActivity()
         }
         else
         {
-            Toast.makeText(this,"El numero de asistentes ya es el máximo",Toast.LENGTH_LONG)
+            Toast.makeText(this, "El numero de asistentes ya es el máximo", Toast.LENGTH_LONG)
         }
     }
+    */
 
 
 }

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Add Employee"
+        android:text="@string/add_employee"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -24,7 +23,7 @@
         android:id="@+id/btn_pilot"
         android:layout_width="174dp"
         android:layout_height="61dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="64dp"
         android:onClick="assignPilot"
         android:text="Pilot"
         android:textColor="#102A5A"
@@ -54,15 +53,14 @@
         android:id="@+id/btn_asistant"
         android:layout_width="196dp"
         android:layout_height="62dp"
+        android:layout_marginTop="72dp"
         android:onClick="assignEmployee"
         android:text="Asistant"
         android:textColor="#5E7011"
         android:textSize="30sp"
         app:backgroundTint="#CDFA0C"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_copilot"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_copilot" />
 </androidx.constraintlayout.widget.ConstraintLayout>

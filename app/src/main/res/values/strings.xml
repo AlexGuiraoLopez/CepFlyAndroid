@@ -5,6 +5,7 @@
     <string name="menu_principal"><u>Main Menu</u></string>
     <string name="admin_mode">Admin</string>
     <string name="user_mode">User</string>
+    <string name="client_menu"><u>Client Options</u></string>
     <string name="exit_mode">Exit</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
@@ -12,7 +13,7 @@
     <string name="flight_info">Flight info</string>
     <string name="new_employee">New employee</string>
     <string name="employee_info">Employee info</string>
-    <string name="venta_tickets"><u>Venta de tickets</u></string>
+    <string name="ticket_sell"><u>Buy tickets</u></string>
     <string name="info"><u>Info</u></string>
     <string name="set_flight"><u>Set flight</u></string>
     <string name="add_employee"><u>Add Employee</u></string>

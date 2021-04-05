@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity()
 {
-    val USRNM = "roger"
+    val USRNM = "alex"
     val PASSWD = "secret"
     lateinit var etUsername : EditText
     lateinit var etPassword : EditText

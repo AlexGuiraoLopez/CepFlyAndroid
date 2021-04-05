@@ -26,12 +26,6 @@ class BuyTicketsActivity : AppCompatActivity()
         ticketsToBuy = 0
     }
 
-
-    fun debug(view:View){
-        println("Total amount: "+Flight.seatTotalAmount)
-        println("Purchased: "+Flight.purchasedSeats)
-        println("ToBuy: "+ticketsToBuy)
-    }
     private fun displayTicketAmount()
     {
        tvTicketAmount.setText(ticketsToBuy.toString())
@@ -79,6 +73,7 @@ class BuyTicketsActivity : AppCompatActivity()
         if((Flight.seatTotalAmount-Flight.purchasedSeats)>=ticketsToBuy)
         {
             Flight.purchasedSeats+=ticketsToBuy
+            Toast.makeText(this, "Purchased $ticketsToBuy",Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
         else

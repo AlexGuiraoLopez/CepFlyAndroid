@@ -12,14 +12,16 @@
         <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".AdminActivity"/>
-        <activity android:name=".ClientActivity"/>
+        <activity android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AdminActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ClientActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".FlightSetActivity"/>
         <activity android:name=".FlightShowActivity"
             android:parentActivityName=".ClientActivity"/>
@@ -29,5 +31,4 @@
             android:parentActivityName=".AdminActivity"/>
         <activity android:name=".EmployeeInfoActivity"/>
     </application>
-
 </manifest>

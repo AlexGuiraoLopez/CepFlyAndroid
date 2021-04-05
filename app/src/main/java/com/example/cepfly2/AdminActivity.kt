@@ -25,9 +25,9 @@ class AdminActivity  : AppCompatActivity()
         val intent = Intent(this,EmployeeInfoActivity::class.java).apply { }
         startActivity(intent)
     }
-    fun changeToStart(view:View)
+    fun changeToMain(view:View)
     {
-        val intent = Intent(this, StartActivity::class.java).apply {  }
+        val intent = Intent(this, MainActivity::class.java).apply {  }
         startActivity(intent)
     }
 }

@@ -29,12 +29,12 @@ class FlightShowActivity : AppCompatActivity()
 
     private fun displayFlightInfo()
     {
-        tvOrigin.setText("Origen: "+Flight.origin)
-        tvDestiny.setText("Destino: "+Flight.destiny)
-        tvPlaneName.setText("Nombre de avión: "+Flight.planeName)
-        tvDuration.setText("Duración: "+Flight.duration)
-        tvSeatAmount.setText("Total asientos: "+Flight.seatTotalAmount)
-        tvSeatPrice.setText("Precio asiento: "+Flight.seatPrice)
+        tvOrigin.setText("Origin: "+Flight.origin)
+        tvDestiny.setText("Destiny: "+Flight.destiny)
+        tvPlaneName.setText("Plane: "+Flight.planeName)
+        tvDuration.setText("Duration: "+Flight.duration)
+        tvSeatAmount.setText("Total seats: "+Flight.seatTotalAmount)
+        tvSeatPrice.setText("Seat price: "+Flight.seatPrice)
     }
 
 }

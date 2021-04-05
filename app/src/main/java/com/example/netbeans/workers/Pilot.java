@@ -1,7 +1,9 @@
 package com.example.netbeans.workers;
 
 import com.example.netbeans.flight.Flight;
-import com.example.netbeans.visualfront.ConsoleColors;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author Alex Guirao López <aguiraol2021@cepnet.net>
@@ -9,8 +11,10 @@ import com.example.netbeans.visualfront.ConsoleColors;
 public class Pilot extends Employee
 {
     String reference, telephone, birthDate;
-    public static Pilot pilotList[]=new Pilot[]{new Pilot("Harrison","Ford","45854112-V","HLK-011","+34569954521","05/10/1974")};
-    
+    //public static Pilot pilotList[]=new Pilot[]{new Pilot("Harrison","Ford","45854112-V","HLK-011","+34569954521","05/10/1974")};
+    public static ArrayList pilotList = new ArrayList();
+    public static int pilotCounter;
+
     public Pilot(String name, String surname, String dni, String reference, String telephone, String birthDate) 
     {
         super(name, surname, dni);
@@ -18,18 +22,7 @@ public class Pilot extends Employee
         this.telephone=telephone;
         this.birthDate=birthDate;
     }
-    
-    public static void asignPilot()
-    {
-        if (Flight.employeeList[0][Flight.MAX_PILOT-1]==null)
-        {
-            Flight.employeeList[0][0]= Pilot.pilotList[0];
-        }
-        else
-        {
-            System.out.println(ConsoleColors.RED+"El numero de pilotos ya es el máximo");
-        }
-    }
+
 
     @Override
     public String toString()

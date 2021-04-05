@@ -23,4 +23,10 @@ class ClientActivity : AppCompatActivity()
         val intent = Intent(this,BuyTicketsActivity::class.java).apply {  }
         startActivity(intent)
     }
+
+    fun changeToFlightInfo(view: View)
+    {
+        val intent = Intent(this,FlightShowActivity::class.java).apply {  }
+        startActivity(intent)
+    }
 }
