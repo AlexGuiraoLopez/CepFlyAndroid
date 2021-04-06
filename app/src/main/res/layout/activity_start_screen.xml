@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7246EB">
+    android:background="@color/dark_green">
 
     <Button
         android:id="@+id/btn_start"
@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:onClick="changeToFlightSet"
         android:text="@string/start_mode"
-        android:textColor="#9E9420"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
-        app:backgroundTint="#FFF266"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,12 +27,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="#FFF266"
+        android:background="#00FFF266"
         android:fontFamily="sans-serif-black"
         android:gravity="center|fill_vertical"
         android:text="@string/welcome"
         android:textAllCaps="false"
-        android:textColor="#9E9420"
+        android:textColor="#FAFAFA"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

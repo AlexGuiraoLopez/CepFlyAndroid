@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#7246EB">
+    android:background="@color/dark_green">
 
     <TextView
         android:id="@+id/textView"
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/menu_principal"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,9 +28,9 @@
         android:layout_marginTop="48dp"
         android:onClick="changeToLogin"
         android:text="@string/admin_mode"
-        android:textColor="#245325"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:backgroundTint="#4CAF50"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -40,6 +41,7 @@
         android:layout_height="48dp"
         android:onClick="changeToStart"
         android:text="@string/exit_mode"
+        android:textSize="18sp"
         app:backgroundTint="#A83131"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,9 +56,9 @@
         android:layout_marginTop="24dp"
         android:onClick="changeToClient"
         android:text="@string/user_mode"
-        android:textColor="#5E5826"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:backgroundTint="#FFC107"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_adminMode" />

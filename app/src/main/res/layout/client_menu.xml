@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7246EB">
+    android:background="@color/dark_green">
 
     <TextView
         android:id="@+id/tv_clientMenu"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/client_menu"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,9 +27,9 @@
         android:layout_marginTop="72dp"
         android:onClick="changeToBuy"
         android:text="Buy tickets"
-        android:textColor="#435E1C"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
-        app:backgroundTint="#79AB32"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,9 +42,9 @@
         android:layout_marginTop="64dp"
         android:onClick="changeToFlightInfo"
         android:text="@string/flight_info"
-        android:textColor="#785533"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
-        app:backgroundTint="#F7B679"
+        app:backgroundTint="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
