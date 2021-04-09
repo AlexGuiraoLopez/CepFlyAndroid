@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Copilot extends Employee
 {
     boolean master;
-    public static int copilotCounter;
+    public static int copilotCount;
     //public static Copilot [] copilotList = new Copilot []{new Copilot ("Cheewakka", "Cheewee", "41254741-L",true)};
     public static ArrayList copilotList = new ArrayList();
 

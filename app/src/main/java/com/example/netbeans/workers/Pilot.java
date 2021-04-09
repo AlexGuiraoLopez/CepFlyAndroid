@@ -13,7 +13,7 @@ public class Pilot extends Employee
     String reference, telephone, birthDate;
     //public static Pilot pilotList[]=new Pilot[]{new Pilot("Harrison","Ford","45854112-V","HLK-011","+34569954521","05/10/1974")};
     public static ArrayList pilotList = new ArrayList();
-    public static int pilotCounter;
+    public static int pilotCount;
 
     public Pilot(String name, String surname, String dni, String reference, String telephone, String birthDate) 
     {

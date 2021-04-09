@@ -28,19 +28,19 @@ class LoginActivity : AppCompatActivity()
 
     fun changeToAdmin(view: View)
     {
-        val intent = Intent(this,AdminActivity::class.java).apply {  }
+        val intent = Intent(this, AdminActivity::class.java).apply {  }
         var username = etUsername.text.toString()
         var password = etPassword.text.toString()
 
         if (username.equals(USRNM) && password.equals(PASSWD))
         {
-            Toast.makeText(this,"Success",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
         else
         {
             tvErrorText.visibility=View.VISIBLE
-            Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
         }
     }
 }

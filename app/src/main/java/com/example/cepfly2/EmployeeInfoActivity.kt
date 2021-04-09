@@ -1,10 +1,12 @@
 package com.example.cepfly2
 
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.netbeans.flight.Flight
 import com.example.netbeans.workers.Copilot
+import com.example.netbeans.workers.Employee
 import com.example.netbeans.workers.Pilot
 
 class EmployeeInfoActivity : AppCompatActivity()
@@ -15,40 +17,19 @@ class EmployeeInfoActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.employee_info)
         tvEmployeeDescription = findViewById(R.id.tv_employeeDescription) as TextView
-        tvEmployeeDescription.text=Flight.employeeList[0][0].toString()
+        showEmployeeInfo()
     }
 
-
-    fun showEmployeeList()
+    private fun showEmployeeInfo()
     {
-        for (i in Flight.employeeList.indices)
+        if (Pilot.pilotCount!=0||Copilot.copilotCount!=0||Employee.employeeCount!=0)
         {
-            for (j in 0 until Flight.employeeList[i].size)
-            {
-                when (i)
-                {
-                    0 -> if (Flight.employeeList[i][j] != null)
-                    {
-                        val pilot = Flight.employeeList[i][j] as Pilot
-                        pilot.showInfo()
-                    } /*else{
-                                    System.out.println("Todavía no hay pilotos");
-                                }*/
-                    1 -> if (Flight.employeeList[i][j] != null)
-                    {
-                        val copilot = Flight.employeeList[i][j] as Copilot
-                        copilot.showInfo()
-                    } /*else{
-                                    System.out.println("Todavía no hay copilotos");
-                                }*/
-                    2 -> if (Flight.employeeList[i][j] != null)
-                    {
-                        Flight.employeeList[i][j].showInfo()
-                    } /*else{
-                                    System.out.println("Todavía no hay asistentes");
-                                }*/
-                }
-            }
+            tvEmployeeDescription.text=Flight.employeeList[0][0].toString()
+        }
+        else
+        {
+            tvEmployeeDescription.text="No hay información disponible"
         }
     }
+
 }

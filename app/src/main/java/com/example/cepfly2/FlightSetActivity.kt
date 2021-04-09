@@ -36,7 +36,6 @@ class FlightSetActivity : AppCompatActivity()
         Flight.duration=Integer.parseInt(etDuration.text.toString())
         Flight.seatTotalAmount=Integer.parseInt(etSeatAmount.text.toString())
         Flight.seatPrice=(etSeatPrice.text.toString()).toFloat()
-
     }
 
     fun changeToMainMenu(view: View)

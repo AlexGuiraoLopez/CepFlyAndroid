@@ -7,8 +7,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.netbeans.flight.Flight
 import com.example.netbeans.workers.Copilot
+import com.example.netbeans.workers.Employee
 import com.example.netbeans.workers.Pilot
-import java.util.ArrayList
 
 class NewEmployeeActivity : AppCompatActivity()
 {
@@ -29,11 +29,11 @@ class NewEmployeeActivity : AppCompatActivity()
      */
     fun assignPilot(view: View)
     {
-        if (Pilot.pilotCounter<Flight.MAX_PILOT)
+        if (Pilot.pilotCount<Flight.MAX_PILOT)
         {
             Flight.employeeList[0].add(Pilot("Harrison", "Ford", "45854112-V", "HLK-011", "+34569954521", "05/10/1974"))
-            Pilot.pilotCounter++
-            Toast.makeText(this, "Añadido", Toast.LENGTH_LONG).show()
+            Pilot.pilotCount++
+            Toast.makeText(this, "Piloto añadido", Toast.LENGTH_LONG).show()
             changeToAdmin()
         }
         else
@@ -47,11 +47,11 @@ class NewEmployeeActivity : AppCompatActivity()
      */
     fun assignCopilot(view: View)
     {
-        if (Copilot.copilotCounter<Flight.MAX_COPILOT)
+        if (Copilot.copilotCount<Flight.MAX_COPILOT)
         {
             Flight.employeeList[1].add(Copilot("Cheewakka", "Cheewee", "41254741-L", true))
-            Toast.makeText(this, "Añadido", Toast.LENGTH_LONG).show()
-            Copilot.copilotCounter++
+            Toast.makeText(this, "Copiloto añadido", Toast.LENGTH_LONG).show()
+            Copilot.copilotCount++
             changeToAdmin()
         }
         else
@@ -63,30 +63,21 @@ class NewEmployeeActivity : AppCompatActivity()
     /**
      * Da de alta un asistente.
      */
-    /*
     fun assignEmployee(view: View)
     {
-        var asigned = false
-        var listIndex = 0
-        if (Flight.employeeList[2][Flight.MAX_EMPLOYEE - 1] == null)
+        if (Employee.employeeCount<Flight.MAX_EMPLOYEE)
         {
-            do {
-                if (Flight.employeeList[2][listIndex] == null)
-                {
-                    Flight.employeeList[2][listIndex] = Employee.assistantList[listIndex]
-                    asigned = true
-                    Toast.makeText(this, "Añadido", Toast.LENGTH_LONG)
-                    changeToAdmin()
-                }
-                listIndex++
-            } while (!asigned)
+            Flight.employeeList[2].add(Employee.assistantList[Employee.employeeCount])
+            Employee.employeeCount++
+            Toast.makeText(this, "Asistente añadido", Toast.LENGTH_SHORT).show()
+            changeToAdmin()
         }
         else
         {
-            Toast.makeText(this, "El numero de asistentes ya es el máximo", Toast.LENGTH_LONG)
+            Toast.makeText(this, "Asistentes máximo", Toast.LENGTH_LONG).show()
         }
     }
-    */
+
 
 
 }
