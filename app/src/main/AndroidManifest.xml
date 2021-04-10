@@ -29,6 +29,7 @@
             android:parentActivityName=".ClientActivity"/>
         <activity android:name=".NewEmployeeActivity"
             android:parentActivityName=".AdminActivity"/>
-        <activity android:name=".EmployeeInfoActivity"/>
+        <activity android:name=".EmployeeInfoActivity"
+            android:parentActivityName=".AdminActivity"/>
     </application>
 </manifest>
